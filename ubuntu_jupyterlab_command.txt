@@ -1,0 +1,29 @@
+- Jupyterlab 실행:
+	python3 -m jupyterlab --port=9999 --no-browser --notebook-dir='.'
+	
+	options: 1. --no-browser
+                        2. --notebook-dir
+ 	           3. --port=9999S
+
+- 가상환경 생성
+	python3 -m virtualenv environment_name
+
+- 가상환경 활성화
+	1. 프로젝트 폴더로 이동
+	2. source environment_name/bin/activate
+
+- 가상환경 비활성화
+	어느 위치에서나 작동
+	deactivate
+
+- 파이썬 패키지 설치
+	python3 -m pip install package_name
+	
+	options: 1. -q 설치 항목 출력 비활성화
+	           2. -U 최신 버전 설치
+
+- requirements.txt 생성
+	python3 -m pip freeze >> requirements.txt
+
+- requirements.txt 설치
+	python3 -m pip install -r requirements.txt	
